@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/kodekloudhub/jenkins-project.git', branch: 'main'
+                git url: 'https://github.com/shux360/jenkins-project.git', branch: 'main'
                 sh "ls -ltr"
             }
         }
