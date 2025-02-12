@@ -6,12 +6,6 @@ pipeline {
 
     }
     stages {
-        stage('Checkout') {
-            steps {
-                git url: 'https://github.com/shux360/jenkins-project.git', branch: 'main'
-                sh "ls -ltr"
-            }
-        }
         stage('Setup') {
             steps {
                 sh "pip install -r requirements.txt"
@@ -20,7 +14,6 @@ pipeline {
         stage('Test') {
             steps {
                 sh "pytest"
-                sh "whoami"
             }
         }
         stage('Login to docker hub') {
