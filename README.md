@@ -1,1 +1,1 @@
-I made some changes only for the testing purposes
+I made some changes only for the testing purpose
